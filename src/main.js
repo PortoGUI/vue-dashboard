@@ -8,6 +8,7 @@ import 'animate.css'
 import '../src/assets/css/fonts.css'
 import '../src/assets/css/tailwind.css'
 import 'vue-toastification/dist/index.css'
+import 'material-icons/iconfont/material-icons.css'
 
 const app = createApp(App)
 app.use(router)
