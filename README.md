@@ -32,3 +32,13 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+```
+npm install eslint@^8.0.1 eslint-plugin-vue@^8.0.1 @vue/eslint-config-standard@^7.0.0 eslint-plugin-promise@^6.0.0
+
+vue add tailwind
+
+choose full 
+
+and done
+
+```
