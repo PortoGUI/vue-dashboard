@@ -3,7 +3,7 @@
   <contact />
 
   <div id="footer" class="flex justify-center items-center h-16 bg-brand-gray">
-    <p class="font-bold text-center text-gray-500">Feedbacker &#169; 2021</p>
+    <p class="font-medium text-center text-gray-800">Feedbacker &#169; 2021</p>
   </div>
 </template>
 

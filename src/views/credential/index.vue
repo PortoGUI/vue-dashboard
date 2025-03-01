@@ -13,7 +13,7 @@
   <div class="flex justify-center w-full h-full">
     <div class="flex flex-col w-4/5 max-w-6xl py-10">
       <h1 class="text-3xl font-black text-gray-700"> <u>Instalação e configuração</u> </h1>
-      <p class="mt-10 text-lg text-gray-800 font-regular">
+      <p class="mt-10 text-lg text-gray-700 font-bold">
         Essa é sua chave de API, será necessárias para acessar a API do FeedBacker.
       </p>
 
@@ -29,7 +29,7 @@
         </div>
       </div>
 
-      <p class="mt-5 text-lg text-gray-800 font-regular">
+      <p class="mt-5 text-lg text-gray-700 font-bold">
         Coloque o script a baixo no seu site para começar a receber FeedBacks.
       </p>
 

@@ -37,7 +37,7 @@
         class="flex justify-center items-center px-8 py-2 mt-10 text-2xl font-bold text-white rounded-full bg-brand-main focus:outline-none transition-all duration-150">
 
         <span v-if="state.isloading" class="material-icons animate-spin-invert">sync</span>
-        <span v-else>Entrar</span>
+        <span v-else>Criar</span>
       </button>
     </Form>
 

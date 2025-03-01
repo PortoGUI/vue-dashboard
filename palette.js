@@ -3,10 +3,11 @@ module.exports = {
     main: '#F1ACDC',
     gray: '#F9F9F9',
     info: '#8296FB',
-    success: '#B8FFB4',
     graydark: '#C0BCB0',
+    success: '#B8FFB4',
     warning: '#E4B52E',
     danger: '#F88676',
+    neutral: '#d1d1d1',
     darkground: '#1e1e1e',
     lightgorund: '#f1f1f1'
   },

@@ -2,19 +2,17 @@
   <div class="flex flex-col">
     <h1 class="text-2xl font-regular text-gray-800"> Filtros </h1>
 
-    <ul class="flex flex-col mt-3 list-none user-select-none">
+    <ul class="flex flex-col mt-3 list-none select-none">
       <li v-for="(filter, index) in state.filters" :key="`item-${index}`"
         class="flex items-center justify-between px-4 py-1 rounded cursor-pointer" :class="{
           'bg-gray-200': filter.active,
           'opacity-50': !filter.active
         }" @click="() => handlerSelect(filter)">
         <div class="flex items-center">
-          <span :style="`background-color: var(${filter.color})`"
-            class="inline-block w-2 h-2 mr-2 rounded-full font-bold" /> {{
-              filter.label }}
+          <span :class="`${filter.color.background}`" class="inline-block w-2 h-2 mr-2 rounded-full font-bold" /> {{
+            filter.label }}
         </div>
-        <span :style="filter.active ? `color: var(${filter.color})` : 'color: var(--color-brand-neutral)'"
-          class="font-bold">
+        <span :class="filter.active ? `${filter.color.text}` : COLORS.other.text" class="font-bold">
           {{ filter.amount }}
         </span>
       </li>
@@ -37,10 +35,10 @@ const LABELS = {
 }
 
 const COLORS = {
-  all: '--color-brand-info',
-  issue: '--color-brand-danger',
-  idea: '--color-brand-warning',
-  other: '--color-brand-neutral'
+  all: { background: 'bg-brand-info', text: 'text-brand-info' },
+  issue: { background: 'bg-brand-danger', text: 'text-brand-danger' },
+  idea: { background: 'bg-brand-warning', text: 'text-brand-warning' },
+  other: { background: 'bg-brand-neutral', text: 'text-brand-neutral' }
 }
 
 function applyFiltersStructure(sumarry) {
@@ -97,14 +95,9 @@ export default {
 
     return {
       state,
+      COLORS,
       handlerSelect
     }
   }
 }
 </script>
-
-<style>
-.user-select-none {
-  user-select: none;
-}
-</style>

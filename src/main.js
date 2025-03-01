@@ -12,5 +12,5 @@ import 'material-icons/iconfont/material-icons.css'
 
 const app = createApp(App)
 app.use(router)
-app.use(Toast, { position: POSITION.BOTTOM_RIGHT })
+app.use(Toast, { position: POSITION.TOP_RIGHT })
 app.mount('#app')

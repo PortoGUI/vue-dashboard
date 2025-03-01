@@ -10,6 +10,7 @@
 
   <div class="flex justify-center w-full pb-20">
     <div class="w-4/5 max-w-6xl py-10 grid grid-cols-4 gap-2">
+
       <div>
         <h1 class="text-3xl font-black text-gray-800">Listagem</h1>
         <suspense>
@@ -22,7 +23,8 @@
           </template>
         </suspense>
       </div>
-      <div class="px-10 pt-17 col-span-3">
+
+      <div class="px-10 custom-padding col-span-3">
         <p v-if="state.hasError" class="text-lg texte-center text-gray-400 font-regular">
           Não conseguimos localizar os feedbacks, a conexão falhou... &#128533;
         </p>
@@ -36,6 +38,7 @@
           :is-opened="index === 0" :feedback="feedback" class="mb-4" />
         <feedback-card-loading v-if="state.isLoadingMoreFeedbacks" />
       </div>
+
     </div>
   </div>
 </template>
@@ -157,3 +160,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.custom-padding {
+  padding-top: 4.1rem;
+}
+</style>
