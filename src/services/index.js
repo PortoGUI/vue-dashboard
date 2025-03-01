@@ -9,7 +9,7 @@ import { setGlobalLoading } from '../store/global'
 const API_ENVIROMENT = {
   production: '',
   development: '',
-  local: 'http://localhost:3000'
+  local: 'http://localhost:3000/api'
 }
 
 const httpClient = axios.create({

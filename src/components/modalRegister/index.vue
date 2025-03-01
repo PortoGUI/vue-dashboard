@@ -13,7 +13,7 @@
           type="text" :class="{ 'border-danger': state.name.error }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-50 border-2 border-transparent rounded"
           placeholder="Anne Monteiro" />
-        <ErrorMessage id="full-name-error" name="full-name" class="block font-medium text-danger" />
+        <ErrorMessage id="full-name-error" name="full-name" class="block font-medium text-brand-danger" />
       </label>
 
       <label class="block mt-9">
@@ -22,7 +22,7 @@
           :class="{ 'border-danger': state.email.error }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-50 border-2 border-transparent rounded"
           placeholder="AnneMonteiro@email.com" />
-        <ErrorMessage id="email-error" name="email" class="block font-medium text-danger" />
+        <ErrorMessage id="email-error" name="email" class="block font-medium text-brand-danger" />
       </label>
 
       <label class="block mt-9">
@@ -30,7 +30,7 @@
         <Field id="password-field" name="password" :rules="ValidateEmptyAndLenght3" v-model="state.password.value"
           type="password" :class="{ 'border-danger': state.password.error }"
           class="block w-full px-4 py-3 mt-1 text-lg bg-gray-50 border-2 border-transparent rounded" />
-        <ErrorMessage id="password-error" name="password" class="block font-medium text-danger" />
+        <ErrorMessage id="password-error" name="password" class="block font-medium text-brand-danger" />
       </label>
 
       <button id="submit-button" :disabled="state.isloading" type="submit" :class="{ 'opacity-50': state.isloading }"

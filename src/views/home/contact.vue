@@ -5,10 +5,10 @@
         alguma duvida?
       </h1>
       <p class="text-lg text-center text-gray-800 font-regular">
-        Quer saber melhor como funciona e quaissão os preços?
+        Quer saber melhor como funciona e quais são os preços?
       </p>
       <div class="mt-10">
-         <a href="mailto:" class="px-6 py-2 mt-10 font-bold text-white rounded-full bg-brand-main focus:outline-none">
+         <a href="mailto:guibusiness.2000@outlook.com" class="px-6 py-2 mt-10 font-bold text-white rounded-full bg-brand-main focus:outline-none">
           Entre em contato!
          </a>
       </div>

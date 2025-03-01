@@ -1,7 +1,7 @@
 <template>
   <teleport to="body">
     <div v-if="state.isActived"
-      class="fixed top-0 left-0 z-50 flex justify-center items-center w-full h-full bg-brand-opacity"
+      class="fixed top-0 left-0 z-50 flex justify-center items-center w-full h-full bg-black bg-opacity-60 backdrop-blur-sm"
       @click="handleModalToggle({ status: false })">
 
       <div class="fixed mx-10 " :class="state.width" @click.stop>
