@@ -7,13 +7,13 @@ import feedbackService from './feedback'
 import { setGlobalLoading } from '../store/global'
 
 const API_ENVIROMENT = {
-  production: '',
+  production: 'https://feed-back-api-virid.vercel.app/api',
   development: '',
   local: 'http://localhost:3000/api'
 }
 
 const httpClient = axios.create({
-  baseURL: API_ENVIROMENT.local
+  baseURL: API_ENVIROMENT[process.env.NODE_ENV] ?? API_ENVIROMENT.local
 })
 
 httpClient.interceptors.request.use(config => {

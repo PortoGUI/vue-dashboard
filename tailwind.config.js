@@ -1,7 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 import palette from './palette'
 module.exports = {
-  content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  content: [
+    './src/**/*.html',
+    './src/**/*.vue',
+    './src/**/*.jsx'
+  ],
   presets: [],
   darkMode: 'media', // or 'class'
   theme: {
